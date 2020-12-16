@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 
 :root {
   --main-text-color: #757575;
@@ -11,6 +20,7 @@
 }
 
 body {
+  margin: 0;
   font-weight: var(--main-font-weight);
   background-color: var(--primary-white-color);
   color: var(--main-text-color);
@@ -23,16 +33,41 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none; 
+.list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
  
 /* Header */
+.nav,
+.container.header {
+  display: flex;
+  align-items: center;
+}
+
 .logo-nav {
   font-family: 'Raleway', sans-serif;
   color: #000000;
   font-size: 26px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 93px; 
 }
 
 .logo-web {
@@ -45,6 +80,11 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
+}
+
+.nav-list li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link:hover,
@@ -56,7 +96,18 @@ ul {
   color: var(--accent-color);
 }
 
+.nav-list {
+  display: flex;
+}
+
+.contacts-header.mail{
+  margin-right: 50px;
+  margin-left: auto;
+}
+
+
 .contacts-header {
+  display: inline-block;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -73,28 +124,44 @@ ul {
 
 .hero {
   background-color: var(--dark-bg-color);
+  text-align: center;
+  padding: 200px 452px;
 }
 
 .hero-title {
+  width: 696px;
+  margin: 0 auto 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 200px;
+  border-radius: 4px;
   font-family: inherit;
+  border-style: none;
+
   color: var(--primary-white-color);
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  
   font-size: 16px;
-  text-align: center;
   line-height: 1.88;
   letter-spacing: 0.06em;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 /* Features section*/ 
