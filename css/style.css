@@ -303,22 +303,24 @@ header {
   font-weight: var(--secondary-font-weight);
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   font-style: normal;
-  height: 81px;
 }
 
 .home-address {
   color: var(--primary-white-color);
+  margin-bottom: 9px;
 }
 
 .link-footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.mail .link-footer {
+  margin-bottom: 9px; 
+}
 
 /* Portfolio page */
-/* Button */
+/* Buttons */
 .portfolio>.container {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -394,4 +396,3 @@ header {
   color: var(--main-text-color);
   margin: 0 24px 20px;
 }
-
