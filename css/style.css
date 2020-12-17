@@ -160,8 +160,10 @@ header {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
+/* Features section*/
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -169,14 +171,34 @@ header {
   height: 1px;
   margin: -1px;
 }
+.features>.container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
-/* Features section*/ 
+.features-list {
+  display: flex;
+  align-items: center;
+}
+
+.features-list li {
+  width: 270px;
+  flex-basis: calc(100%/8-30px);
+  margin-right: 30px;
+}
+
+.features-list li:nth-child(4n) {
+  margin-right: 0;
+}
+
 .features-title {
   color: var(--secondary-text-color);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
+
 
 .features-text {
   font-weight: var(--secondary-font-weight);
@@ -190,6 +212,22 @@ header {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.work-section .list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 94px;
+}
+
+.work-section li {
+  width: 370px;
+  margin-right: 30px;
+}
+ 
+.work-section li:nth-child(3n) {
+  margin-right: 0;
 }
 
 /* Team section */
@@ -197,22 +235,52 @@ header {
   background-color: var(--middle-bg-color);
 }
 
+.team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-title {
   color: var(--secondary-text-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+  margin-bottom: 50px;
+}
+
+.team img {
+  margin-bottom: 30px;
 }
 
 .team-name {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-description {
   font-weight: var(--secondary-font-weight);
   font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.team .list {
+  display: flex;
+  align-items: center;
+}
+
+.team li {
+  width: 270px;
+  margin-right: 30px;
+  background-color: var(--primary-white-color);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team li:nth-child(4n) {
+  margin-right: 0;
 }
 
 /* Footer */
