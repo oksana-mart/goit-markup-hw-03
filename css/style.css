@@ -315,10 +315,15 @@ header {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.mail .link-footer {
+.mail .link-footer,
+.home-address {
+  display: inline-block;
   margin-bottom: 9px; 
 }
 
+.link-footer {
+  height: 21px;
+}
 /* Portfolio page */
 /* Buttons */
 .portfolio>.container {
