@@ -70,6 +70,8 @@ header {
   border-bottom: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ECECEC;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo-nav {
@@ -91,7 +93,6 @@ header {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
-  padding: 32px 0;
 }
 
 .nav-list li:not(:last-child) {
@@ -176,7 +177,7 @@ header {
   height: 1px;
   margin: -1px;
 }
-.features>.container {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -204,7 +205,6 @@ header {
   margin-bottom: 10px;
 }
 
-
 .features-text {
   font-weight: var(--secondary-font-weight);
   font-size: 14px;
@@ -212,6 +212,10 @@ header {
 }
 
 /* Work section*/
+.work-section {
+  padding-bottom: 94px;
+}
+
 .work-title {
   color: var(--secondary-text-color);
   font-size: 36px;
@@ -223,7 +227,6 @@ header {
 .work-section .list {
   display: flex;
   align-items: center;
-  margin-bottom: 94px;
 }
 
 .work-section li {
@@ -240,7 +243,7 @@ header {
   background-color: var(--middle-bg-color);
 }
 
-.team .container {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -329,9 +332,10 @@ header {
 .link-footer {
   height: 21px;
 }
+
 /* Portfolio page */
 /* Buttons */
-.portfolio>.container {
+.portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -389,15 +393,12 @@ header {
   margin-bottom: 0;
 }
 
-.portfolio-list img {
-  margin-bottom: 20px;
-}
 .portfolio-title {
   color: var(--secondary-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 0 24px 4px;
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -405,5 +406,8 @@ header {
   font-size: 16px;
   line-height: 1.88;
   color: var(--main-text-color);
-  margin: 0 24px 20px;
+}
+
+.description-portfolio {
+  padding: 20px 24px;
 }
