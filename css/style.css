@@ -67,9 +67,7 @@ img {
 }
 
 header {
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
+  border-bottom: 1px solid #ECECEC;
   padding-top: 24px;
   padding-bottom: 25px;
 }
